@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -178,83 +178,13 @@
         <button>Lihat Semua</button>
     </section>
 
-    <!-- Bagian Recycle -->
-    <section class="recyle">
-        <div class="card">
-            <h3>Menjaga Lingkungan Dengan</h3>
+    <recycle-bar> </recycle-bar>
 
-            <div class="cardContent">
-                <div class="reduce">
-                    <img src="./img/3R/lets-icons_reduce.png" alt="">
-                    <h3><strong>Reduce</strong> berusaha mengurangi jumlah sampah yang di haruskan</h3>
-                </div>
-                <div class="reuse">
-                    <img src="./img/3R/reuse 1.png" alt="">
-                    <h3><strong>Reuse</strong> menggunakan kembali bahan yang masih bisa digunakan</h3>
-                </div>
-                <div class="recycle">
-                    <img src="./img/3R/recycle-symbol 1.png" alt="">
-                    <h3><strong>Reduce</strong> mengolah kembali sampah menjadi bahan yang bisa digunakan kembali</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+    <feature-bar> </feature-bar>
 
-    <section class="features">
-        <div class="title">
-            <h3>Fitur Kami</h3>
-        </div>
+    <donasi-bar> </donasi-bar>
     
-        <div class="featuresContent">
-            <a href="laporan.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/Fitur/Plastic is the new coal, report finds.jpeg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <h3>Laporkan sampah</h3>
-                        <p>Kamu menemukan sampah yang mengganggu? Segera laporkan lewat aplikasi kita.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="eksplorasi.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/Fitur/image 22.png">
-                    </div>
-                    <div class="cardText">
-                        <h3>Bersihkan sampah</h3>
-                        <p>Ayo bersihkan sampah yang mengganggu, masing-masing kontribusi dari kita akan membuat lingkungan kita terbebas dari polusi sampah.</p>
-                    </div>
-                </div>
-            </a>
-            <a href="jenis.html">
-                <div class="card">
-                    <div class="images">
-                        <img src="./img/Fitur/jenis.jpg" alt="">
-                    </div>
-                    <div class="cardText">
-                        <h3>Kenali jenis sampah</h3>
-                        <p>Mau tau jenis sampah apa aja yang umum disekitarmu? Yuk kenali berbagai jenis mereka.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </section>
-
-    <section class="scan">
-        <div class="card">
-            <div class="images">
-                <img src="img/qr.png" alt="">
-            </div>
-            <div class="cardText">
-                <h1>Donasi <br> Aplikasi Trashfinder</h1>
-                <p>Sociallbuzz</p>
-                <p>Donasi kamu akan di donasikan</p>
-            </div>
-        </div>
-    </section>
-
+    
     <footer>
         <div class="card">
             <h4>Copyright @2024 | Sure Trashfinder</h4>
@@ -270,7 +200,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="carousel.js"></script>
+    <script type="module" src="./src/script/components/recycle.js"></script>
+    <script type="module" src="./src/script/components/feature.js"></script>
+    <script type="module" src="./src/script/components/scan.js"></script>
     
     
 </body>
